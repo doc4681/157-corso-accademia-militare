@@ -45,7 +45,7 @@ body {
     transform: translateX(-50%);
     width: 200px;
     height: 3px;
-    background: linear-gradient(90deg, transparent, #2c5f7f, transparent);
+
 }
 
 .main-title {
