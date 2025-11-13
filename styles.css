@@ -211,10 +211,10 @@ main {
     display: block;
     width: 100%;
     max-width: 600px;
-    margin-left: auto;
+    !--margin-left: auto;
     margin-right: auto;
     padding-bottom: 0.5rem;
-    text-align: center;
+    text-align: left;
 }
 
 .event-title::after {
@@ -271,14 +271,6 @@ main {
 
 .event-image:nth-child(even) {
     height: 320px;
-}
-
-/* Specific sizing for Quarantennale locandina on desktop */
-.event-section:nth-of-type(4) .image-gallery .event-image {
-    height: 200px;
-    max-width: 400px;
-    margin: 0 auto;
-    display: block;
 }
 
 /* Video Container */
@@ -405,12 +397,6 @@ main {
         height: 180px;
     }
 
-    /* Quarantennale locandina mobile */
-    .event-section:nth-of-type(4) .image-gallery .event-image {
-        height: 220px;
-        max-width: none;
-    }
-
     .video-container {
         margin-top: 1rem;
     }
@@ -460,12 +446,6 @@ main {
     .event-image:nth-child(even) {
         height: 200px;
     }
-
-    /* Quarantennale locandina mobile */
-    .event-section:nth-of-type(4) .image-gallery .event-image {
-        height: 220px;
-        max-width: none;
-    }
 }
 
 /* iPhone 11/12/13/14 (390px) */
@@ -510,12 +490,6 @@ main {
 
     .event-image:nth-child(even) {
         height: 220px;
-    }
-
-    /* Quarantennale locandina mobile */
-    .event-section:nth-of-type(4) .image-gallery .event-image {
-        height: 220px;
-        max-width: none;
     }
 }
 
@@ -562,12 +536,6 @@ main {
 
     .event-image:nth-child(even) {
         height: 240px;
-    }
-
-    /* Quarantennale locandina mobile */
-    .event-section:nth-of-type(4) .image-gallery .event-image {
-        height: 240px;
-        max-width: none;
     }
 
     .video-container {
@@ -619,12 +587,6 @@ main {
 
     .event-image:nth-child(even) {
         height: 260px;
-    }
-
-    /* Quarantennale locandina tablet */
-    .event-section:nth-of-type(4) .image-gallery .event-image {
-        height: 280px;
-        max-width: none;
     }
 
     .video-container {
