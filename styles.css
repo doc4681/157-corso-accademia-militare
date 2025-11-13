@@ -364,7 +364,7 @@ main {
 /* iPhone SE (320px) */
 @media (max-width: 320px) {
     .main-header {
-        height: 176px; /* era 160px */
+        height: 211px; /* era 160px */
     }
     
     .main-title {
@@ -417,7 +417,7 @@ main {
 /* iPhone 8/7/6s (375px) */
 @media (max-width: 375px) {
      .main-header {
-        height: 198px; /* era 180px */
+        height: 238px; /* era 180px */
     }
     
     .main-title {
@@ -467,7 +467,7 @@ main {
 /* iPhone 11/12/13/14 (390px) */
 @media (max-width: 390px) {
      .main-header {
-        height: 220px; /* era 200px */
+        height: 264px; /* era 200px */
     }
     
     .main-title {
@@ -516,7 +516,7 @@ main {
 /* iPhone 15/16/17 Pro Max (430px) */
 @media (max-width: 430px) {
     .main-header {
-        height: 242px; /* era 220px */
+        height: 290px; /* era 220px */
     }
     
     .main-title {
@@ -571,7 +571,7 @@ main {
 /* iPad and Tablets (768px) */
 @media (max-width: 768px) {
     .main-header {
-        height: 264px; /* era 240px */
+        height: 316px; /* era 240px */
     }
     
     .main-title {
