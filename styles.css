@@ -211,16 +211,17 @@ main {
     display: block;
     width: 100%;
     max-width: 600px;
-    !--margin-left: auto;
+    margin-left: auto;
     margin-right: auto;
     padding-bottom: 0.5rem;
-    text-align: left;
+    text-align: center;
 }
 
 .event-title::after {
     content: '';
     position: absolute;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     bottom: 0;
     width: 0;
     height: 3px;
@@ -236,7 +237,7 @@ main {
     font-size: 1.3rem;
     color: #666;
     font-weight: 500;
-    !--margin-top: 0.8rem;
+    margin-top: 0.8rem;
     padding: 0.5rem 1rem;
     background: rgba(11, 83, 148, 0.05);
     border-left: 4px solid #2c5f7f;
@@ -271,6 +272,14 @@ main {
 
 .event-image:nth-child(even) {
     height: 320px;
+}
+
+/* Quarantennale Image - Desktop Optimization */
+.event-section:nth-of-type(4) img {
+    max-width: 400px;
+    height: 200px;
+    margin: 0 auto;
+    display: block;
 }
 
 /* Video Container */
@@ -400,6 +409,11 @@ main {
     .video-container {
         margin-top: 1rem;
     }
+
+    /* Quarantennale Image - iPhone SE */
+    .event-section:nth-of-type(4) img {
+        height: 220px;
+    }
 }
 
 /* iPhone 8/7/6s (375px) */
@@ -446,6 +460,11 @@ main {
     .event-image:nth-child(even) {
         height: 200px;
     }
+
+    /* Quarantennale Image - iPhone 8/7/6s */
+    .event-section:nth-of-type(4) img {
+        height: 220px;
+    }
 }
 
 /* iPhone 11/12/13/14 (390px) */
@@ -489,6 +508,11 @@ main {
     }
 
     .event-image:nth-child(even) {
+        height: 220px;
+    }
+
+    /* Quarantennale Image - iPhone 11/12/13/14 */
+    .event-section:nth-of-type(4) img {
         height: 220px;
     }
 }
@@ -542,6 +566,11 @@ main {
         margin-top: 1.5rem;
         margin-bottom: 1rem;
     }
+
+    /* Quarantennale Image - iPhone 15/16/17 Pro Max */
+    .event-section:nth-of-type(4) img {
+        height: 240px;
+    }
 }
 
 /* iPad and Tablets (768px) */
@@ -592,6 +621,11 @@ main {
     .video-container {
         margin-top: 2rem;
         margin-bottom: 1.5rem;
+    }
+
+    /* Quarantennale Image - iPad */
+    .event-section:nth-of-type(4) img {
+        height: 280px;
     }
 }
 
