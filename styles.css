@@ -417,7 +417,7 @@ main {
 /* iPhone 8/7/6s (375px) */
 @media (max-width: 375px) {
      .main-header {
-        height: 238px; /* era 180px */
+        height: 400px; /* era 180px */
     }
     
     .main-title {
