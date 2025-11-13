@@ -20,10 +20,15 @@ body {
 
 /* Header */
 .main-header {
-    background: linear-gradient(135deg, #1a3a52 0%, #2c5f7f 100%);
+    background: linear-gradient(135deg, rgba(26, 58, 82, 0.95) 0%, rgba(44, 95, 127, 0.95) 100%), 
+                url('images/stemma-157.png');
+    background-size: cover, contain;
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
     color: white;
-    padding: 2rem 0;
+    padding: 3rem 0;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
 .main-title {
