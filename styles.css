@@ -93,7 +93,7 @@ main {
 .event-section {
     background: white;
     border-radius: 12px;
-    padding: 3rem;
+    padding: 1rem;
     margin-bottom: 3rem;
     box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
