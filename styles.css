@@ -397,7 +397,7 @@ main {
     }
 
     .event-image {
-        height: 160px;
+        height: 180px;
     }
 
     .event-image:nth-child(even) {
@@ -451,7 +451,7 @@ main {
     }
 
     .event-image {
-        height: 180px;
+        height: 200px;
     }
 
     .event-image:nth-child(even) {
@@ -504,7 +504,7 @@ main {
     }
 
     .event-image:nth-child(even) {
-        height: 220px;
+        height: 320px;
     }
 
     /* Quarantennale Image - iPhone 11/12/13/14 */
@@ -516,7 +516,7 @@ main {
 /* iPhone 15/16/17 Pro Max (430px) */
 @media (max-width: 430px) {
     .main-header {
-        height: 290px; /* era 220px */
+        height: 380px; /* era 220px */
     }
     
     .main-title {
@@ -605,7 +605,7 @@ main {
     }
 
     .event-image {
-        height: 240px;
+        height: 380px;
     }
 
     .event-image:nth-child(even) {
