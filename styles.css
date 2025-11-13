@@ -20,15 +20,20 @@ body {
 
 /* Header */
 .main-header {
-    background: linear-gradient(135deg, rgba(26, 58, 82, 0.95) 0%, rgba(44, 95, 127, 0.95) 100%), 
-                url('images/stemma-157.png');
-    background-size: cover, contain;
-    background-position: center, center;
-    background-repeat: no-repeat, no-repeat;
-    color: white;
-    padding: 3rem 0;
+    background: white;
+    background-image: url('images/stemma-157.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #0b5394;
+    padding: 1rem 0;
+    height: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     position: relative;
+    border-bottom: 3px solid #0b5394;
 }
 
 .main-title {
@@ -37,7 +42,7 @@ body {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    color: #0b5394;
 }
 
 /* Hero Section */
@@ -156,6 +161,10 @@ main {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .main-header {
+        height: 250px;
+    }
+    
     .main-title {
         font-size: 1.8rem;
         letter-spacing: 1px;
@@ -180,6 +189,10 @@ main {
 }
 
 @media (max-width: 480px) {
+    .main-header {
+        height: 200px;
+    }
+    
     .main-title {
         font-size: 1.4rem;
     }
