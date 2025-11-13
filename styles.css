@@ -211,7 +211,7 @@ main {
     display: block;
     width: 100%;
     max-width: 600px;
-    margin-left: auto;
+    !--margin-left: auto;
     margin-right: auto;
     padding-bottom: 0.5rem;
     text-align: left;
@@ -236,8 +236,7 @@ main {
     font-size: 1.3rem;
     color: #666;
     font-weight: 500;
-    margin-top: 0.8rem;
-    margin-left: 0.625rem;
+    !--margin-top: 0.8rem;
     padding: 0.5rem 1rem;
     background: rgba(11, 83, 148, 0.05);
     border-left: 4px solid #2c5f7f;
