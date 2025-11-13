@@ -1,0 +1,234 @@
+/* Reset e base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.main-header {
+    background: linear-gradient(135deg, #1a3a52 0%, #2c5f7f 100%);
+    color: white;
+    padding: 2rem 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Hero Section */
+.hero-section {
+    width: 100%;
+    max-height: 600px;
+    overflow: hidden;
+    margin-bottom: 3rem;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Main Content */
+main {
+    padding: 2rem 0;
+}
+
+/* Event Sections */
+.event-section {
+    background: white;
+    border-radius: 8px;
+    padding: 2.5rem;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.event-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    margin-bottom: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.event-link:hover .event-title {
+    color: #2c5f7f;
+}
+
+.event-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1a3a52;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+
+.event-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 3px;
+    background: #2c5f7f;
+    transition: width 0.3s ease;
+}
+
+.event-link:hover .event-title::after {
+    width: 100%;
+}
+
+.event-date {
+    font-size: 1.2rem;
+    color: #666;
+    font-weight: 500;
+    margin-top: 0.5rem;
+}
+
+/* Image Gallery */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.event-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.event-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+.main-footer {
+    background: #1a3a52;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+
+.main-footer p {
+    font-size: 0.95rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+    .event-section {
+        padding: 1.5rem;
+    }
+
+    .event-title {
+        font-size: 1.5rem;
+    }
+
+    .event-date {
+        font-size: 1rem;
+    }
+
+    .image-gallery {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-title {
+        font-size: 1.4rem;
+    }
+
+    .event-section {
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .event-title {
+        font-size: 1.3rem;
+    }
+}
+
+/* Accessibilità */
+.event-link:focus,
+.event-image:focus {
+    outline: 3px solid #2c5f7f;
+    outline-offset: 3px;
+}
+
+/* Animazioni */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.event-section {
+    animation: fadeIn 0.6s ease-out;
+}
+
+/* Print Styles */
+@media print {
+    .main-header {
+        background: #1a3a52;
+        color: white;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .event-section {
+        page-break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+
+    .event-image {
+        max-width: 100%;
+        page-break-inside: avoid;
+    }
+}
