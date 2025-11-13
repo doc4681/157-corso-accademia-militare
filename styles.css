@@ -101,21 +101,21 @@ main {
     display: block;
 }
 
-/* Mobile Optimized Dividers */
-@media (max-width: 768px) {
+/* Responsive Dividers for iPhone */
+@media (max-width: 430px) {
     .section-divider {
         margin: 0 auto 1.5rem;
     }
 
     .section-divider .tyJCtd.baZpAe .iwQgFb,
     .tyJCtd.baZpAe .iwQgFb {
-        width: 40px;
+        width: 35px;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 390px) {
     .section-divider {
-        margin: 0 auto 1rem;
+        margin: 0 auto 1.2rem;
     }
 
     .section-divider .tyJCtd.baZpAe .iwQgFb,
@@ -124,14 +124,25 @@ main {
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 375px) {
+    .section-divider {
+        margin: 0 auto 1rem;
+    }
+
+    .section-divider .tyJCtd.baZpAe .iwQgFb,
+    .tyJCtd.baZpAe .iwQgFb {
+        width: 25px;
+    }
+}
+
+@media (max-width: 320px) {
     .section-divider {
         margin: 0 auto 0.8rem;
     }
 
     .section-divider .tyJCtd.baZpAe .iwQgFb,
     .tyJCtd.baZpAe .iwQgFb {
-        width: 25px;
+        width: 20px;
     }
 }
 
@@ -197,8 +208,13 @@ main {
     margin-bottom: 0.8rem;
     transition: all 0.3s ease;
     position: relative;
-    display: inline-block;
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
     padding-bottom: 0.5rem;
+    text-align: center;
 }
 
 .event-title::after {
@@ -319,77 +335,82 @@ main {
     font-weight: 500;
 }
 
-/* Container Mobile Optimization */
-@media (max-width: 480px) {
+/* Container Padding Optimized for iPhone */
+@media (max-width: 430px) {
     .container {
-        padding: 0 15px;
+        padding: 0 12px;
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 375px) {
     .container {
         padding: 0 10px;
     }
 }
 
-/* Responsive Design - Optimized for Mobile */
-@media (max-width: 768px) {
-    .main-header {
-        height: 240px;
-    }
-    
-    .main-title {
-        font-size: 1.8rem;
-        letter-spacing: 1.5px;
-    }
-
-    main {
-        padding: 1.5rem 0;
-    }
-
-    .event-section {
-        padding: 1.5rem;
-        margin-bottom: 1.5rem;
-    }
-
-    .event-title {
-        font-size: 1.6rem;
-        margin-bottom: 0.5rem;
-    }
-
-    .event-date {
-        font-size: 1rem;
-        padding: 0.3rem 0.6rem;
-        margin-top: 0.3rem;
-    }
-
-    .image-gallery {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-        margin-top: 1rem;
-    }
-
-    .event-image {
-        height: 220px;
-    }
-
-    .event-image:nth-child(even) {
-        height: 240px;
-    }
-
-    .video-container {
-        margin-top: 1.5rem;
-        margin-bottom: 1rem;
+@media (max-width: 320px) {
+    .container {
+        padding: 0 8px;
     }
 }
 
-@media (max-width: 480px) {
+/* iPhone SE (320px) */
+@media (max-width: 320px) {
     .main-header {
-        height: 200px;
+        height: 160px;
     }
     
     .main-title {
-        font-size: 1.4rem;
+        font-size: 1.1rem;
+        letter-spacing: 0.5px;
+    }
+
+    main {
+        padding: 0.8rem 0;
+    }
+
+    .event-section {
+        padding: 0.8rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .event-title {
+        font-size: 1.2rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .event-date {
+        font-size: 0.85rem;
+        padding: 0.2rem 0.4rem;
+        margin-top: 0.1rem;
+    }
+
+    .image-gallery {
+        gap: 0.6rem;
+        margin-top: 0.6rem;
+    }
+
+    .event-image {
+        height: 160px;
+    }
+
+    .event-image:nth-child(even) {
+        height: 180px;
+    }
+
+    .video-container {
+        margin-top: 1rem;
+    }
+}
+
+/* iPhone 8/7/6s (375px) */
+@media (max-width: 375px) {
+    .main-header {
+        height: 180px;
+    }
+    
+    .main-title {
+        font-size: 1.3rem;
         letter-spacing: 1px;
     }
 
@@ -428,56 +449,150 @@ main {
     }
 }
 
-/* Extra Small Screens */
-@media (max-width: 360px) {
+/* iPhone 11/12/13/14 (390px) */
+@media (max-width: 390px) {
     .main-header {
-        height: 180px;
-        padding: 0.5rem 0;
+        height: 200px;
     }
     
     .main-title {
-        font-size: 1.2rem;
-        letter-spacing: 0.5px;
+        font-size: 1.4rem;
+        letter-spacing: 1px;
     }
 
     main {
-        padding: 0.8rem 0;
+        padding: 1.2rem 0;
     }
 
     .event-section {
-        padding: 0.8rem;
-        margin-bottom: 0.8rem;
+        padding: 1.2rem;
+        margin-bottom: 1.2rem;
     }
 
     .event-title {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
+        margin-bottom: 0.5rem;
     }
 
     .event-date {
-        font-size: 0.85rem;
-        padding: 0.2rem 0.4rem;
-        margin-top: 0.1rem;
-    }
-
-    .event-link {
-        margin-bottom: 1rem;
+        font-size: 1rem;
+        padding: 0.3rem 0.6rem;
+        margin-top: 0.2rem;
     }
 
     .image-gallery {
-        gap: 0.6rem;
-        margin-top: 0.6rem;
+        gap: 1rem;
+        margin-top: 1rem;
     }
 
     .event-image {
-        height: 160px;
+        height: 200px;
     }
 
     .event-image:nth-child(even) {
-        height: 180px;
+        height: 220px;
+    }
+}
+
+/* iPhone 15/16/17 Pro Max (430px) */
+@media (max-width: 430px) {
+    .main-header {
+        height: 220px;
+    }
+    
+    .main-title {
+        font-size: 1.6rem;
+        letter-spacing: 1.2px;
+    }
+
+    main {
+        padding: 1.5rem 0;
+    }
+
+    .event-section {
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .event-title {
+        font-size: 1.6rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .event-date {
+        font-size: 1rem;
+        padding: 0.3rem 0.6rem;
+        margin-top: 0.3rem;
+    }
+
+    .image-gallery {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+        margin-top: 1.2rem;
+    }
+
+    .event-image {
+        height: 220px;
+    }
+
+    .event-image:nth-child(even) {
+        height: 240px;
     }
 
     .video-container {
-        margin-top: 1rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+    }
+}
+
+/* iPad and Tablets (768px) */
+@media (max-width: 768px) {
+    .main-header {
+        height: 240px;
+    }
+    
+    .main-title {
+        font-size: 1.8rem;
+        letter-spacing: 1.5px;
+    }
+
+    main {
+        padding: 1.8rem 0;
+    }
+
+    .event-section {
+        padding: 1.8rem;
+        margin-bottom: 1.8rem;
+    }
+
+    .event-title {
+        font-size: 1.8rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .event-date {
+        font-size: 1.1rem;
+        padding: 0.4rem 0.8rem;
+        margin-top: 0.4rem;
+    }
+
+    .image-gallery {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .event-image {
+        height: 240px;
+    }
+
+    .event-image:nth-child(even) {
+        height: 260px;
+    }
+
+    .video-container {
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
     }
 }
 
