@@ -360,6 +360,7 @@ main {
     .event-date {
         font-size: 1rem;
         padding: 0.3rem 0.6rem;
+        margin-top: 0.3rem;
     }
 
     .image-gallery {
@@ -410,6 +411,7 @@ main {
     .event-date {
         font-size: 0.9rem;
         padding: 0.25rem 0.5rem;
+        margin-top: 0.2rem;
     }
 
     .image-gallery {
@@ -454,6 +456,7 @@ main {
     .event-date {
         font-size: 0.85rem;
         padding: 0.2rem 0.4rem;
+        margin-top: 0.1rem;
     }
 
     .event-link {
