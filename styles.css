@@ -165,7 +165,7 @@ main {
     top: 0;
     left: 0;
     right: 0;
-    height: 4px;
+    height: 6px;
     background: linear-gradient(90deg, #871f78, #871f78, #871f78);
     background-size: 200% 100%;
     animation: shimmer 3s ease-in-out infinite;
@@ -263,7 +263,7 @@ main {
         font-weight: 500;
         padding: 0.5rem 1rem;
         background: rgba(11, 83, 148, 0.05);
-        border-left: 4px solid #2c5f7f;
+        border-left: 6px solid #2c5f7f;
         border-radius: 4px;
         display: inline-block;
         width: fit-content;
