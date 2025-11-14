@@ -210,9 +210,8 @@ main {
     position: relative;
     display: block;
     width: 100%;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: none;
+    margin: 0;
     padding-bottom: 0.5rem;
     text-align: left;
 }
@@ -271,6 +270,60 @@ main {
 
 .event-image:nth-child(even) {
     height: 320px;
+}
+
+/* DESKTOP - Specific Image Types */
+/* Spadino - Orizzontale molto lungo */
+.spadino-image {
+    height: 180px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* Ventennale, Preraduno, Cinquantennale - Orizzontali standard */
+.horizontal-image {
+    height: 250px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* Quarantennale - Verticale */
+.vertical-image {
+    height: 350px;
+    width: auto;
+    max-width: 400px;
+    object-fit: contain;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Numero Unico - Verticale alto */
+.portrait-image {
+    height: 400px;
+    width: auto;
+    max-width: 280px;
+    object-fit: contain;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Piatto - Quadrato */
+.square-image {
+    height: 280px;
+    width: 280px;
+    object-fit: contain;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Giuramento - Quasi quadrato */
+.almost-square-image {
+    height: 260px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
 }
 
 /* Quarantennale Image - Desktop Optimization */
@@ -361,67 +414,14 @@ main {
     }
 }
 
-/* iPhone SE (320px) */
-@media (max-width: 320px) {
-    .main-header {
-        height: 211px; /* era 160px */
-    }
-    
-    .main-title {
-        font-size: 1.21rem; /* era 1.1rem */
-    }
-
-    main {
-        padding: 0.8rem 0;
-    }
-
-    .event-section {
-        padding: 0.8rem;
-        margin-bottom: 0.8rem;
-    }
-
-    .event-title {
-        font-size: 1.2rem;
-        margin-bottom: 0.4rem;
-    }
-
-    .event-date {
-        font-size: 0.85rem;
-        padding: 0.2rem 0.4rem;
-        margin-top: 0.1rem;
-    }
-
-    .image-gallery {
-        gap: 0.6rem;
-        margin-top: 0.6rem;
-    }
-
-    .event-image {
-        height: 180px;
-    }
-
-    .event-image:nth-child(even) {
-        height: 180px;
-    }
-
-    .video-container {
-        margin-top: 1rem;
-    }
-
-    /* Quarantennale Image - iPhone SE */
-    .event-section:nth-of-type(4) img {
-        height: 220px;
-    }
-}
-
-/* iPhone 8/7/6s (375px) */
+/* iPhone SE (2nd Gen - 375px) */
 @media (max-width: 375px) {
-     .main-header {
-        height: 400px; /* era 180px */
+    .main-header {
+        height: 211px;
     }
     
     .main-title {
-        font-size: 1.43rem; /* era 1.3rem */
+        font-size: 1.21rem;
     }
 
     main {
@@ -448,14 +448,106 @@ main {
     .image-gallery {
         gap: 0.8rem;
         margin-top: 0.8rem;
+        grid-template-columns: 1fr;
     }
 
+    /* Mobile Image Sizes */
     .event-image {
         height: 200px;
     }
-
-    .event-image:nth-child(even) {
+    
+    .spadino-image {
+        height: 160px;
+    }
+    
+    .horizontal-image {
+        height: 180px;
+    }
+    
+    .vertical-image {
+        height: 220px;
+        max-width: 180px;
+    }
+    
+    .portrait-image {
+        height: 240px;
+        max-width: 160px;
+    }
+    
+    .square-image {
         height: 200px;
+        width: 200px;
+    }
+    
+    .almost-square-image {
+        height: 200px;
+    }
+
+    .video-container {
+        padding-bottom: 65%; /* Più grande */
+        margin-top: 1.5rem;
+        margin-bottom: 1.2rem;
+    }
+
+    /* Quarantennale Image - iPhone SE */
+    .event-section:nth-of-type(4) img {
+        height: 220px;
+    }
+}
+
+/* iPhone 8/7/6s (375px - Same as SE) */
+@media (max-width: 375px) and (min-width: 321px) {
+    .main-header {
+        height: 198px;
+    }
+    
+    .main-title {
+        font-size: 1.43rem;
+    }
+
+    .event-title {
+        font-size: 1.3rem;
+    }
+
+    .event-date {
+        font-size: 0.9rem;
+    }
+
+    /* Mobile Image Sizes - Slightly larger */
+    .event-image {
+        height: 200px;
+    }
+    
+    .spadino-image {
+        height: 170px;
+    }
+    
+    .horizontal-image {
+        height: 190px;
+    }
+    
+    .vertical-image {
+        height: 230px;
+        max-width: 190px;
+    }
+    
+    .portrait-image {
+        height: 250px;
+        max-width: 170px;
+    }
+    
+    .square-image {
+        height: 210px;
+        width: 210px;
+    }
+    
+    .almost-square-image {
+        height: 210px;
+    }
+
+    .video-container {
+        padding-bottom: 65%;
+        margin-top: 1.5rem;
     }
 
     /* Quarantennale Image - iPhone 8/7/6s */
@@ -465,13 +557,13 @@ main {
 }
 
 /* iPhone 11/12/13/14 (390px) */
-@media (max-width: 390px) {
-     .main-header {
-        height: 264px; /* era 200px */
+@media (max-width: 390px) and (min-width: 376px) {
+    .main-header {
+        height: 220px;
     }
     
     .main-title {
-        font-size: 1.54rem; /* era 1.4rem */
+        font-size: 1.54rem;
     }
 
     main {
@@ -497,14 +589,45 @@ main {
     .image-gallery {
         gap: 1rem;
         margin-top: 1rem;
+        grid-template-columns: 1fr;
     }
 
+    /* Mobile Image Sizes - Medium */
     .event-image {
         height: 200px;
     }
+    
+    .spadino-image {
+        height: 180px;
+    }
+    
+    .horizontal-image {
+        height: 200px;
+    }
+    
+    .vertical-image {
+        height: 240px;
+        max-width: 200px;
+    }
+    
+    .portrait-image {
+        height: 260px;
+        max-width: 180px;
+    }
+    
+    .square-image {
+        height: 220px;
+        width: 220px;
+    }
+    
+    .almost-square-image {
+        height: 220px;
+    }
 
-    .event-image:nth-child(even) {
-        height: 320px;
+    .video-container {
+        padding-bottom: 65%;
+        margin-top: 1.8rem;
+        margin-bottom: 1.3rem;
     }
 
     /* Quarantennale Image - iPhone 11/12/13/14 */
@@ -514,13 +637,13 @@ main {
 }
 
 /* iPhone 15/16/17 Pro Max (430px) */
-@media (max-width: 430px) {
+@media (max-width: 430px) and (min-width: 391px) {
     .main-header {
-        height: 380px; /* era 220px */
+        height: 242px;
     }
     
     .main-title {
-        font-size: 1.76rem; /* era 1.6rem */
+        font-size: 1.76rem;
     }
 
     main {
@@ -549,17 +672,42 @@ main {
         margin-top: 1.2rem;
     }
 
+    /* Mobile Image Sizes - Larger */
     .event-image {
         height: 220px;
     }
-
-    .event-image:nth-child(even) {
-        height: 240px;
+    
+    .spadino-image {
+        height: 190px;
+    }
+    
+    .horizontal-image {
+        height: 210px;
+    }
+    
+    .vertical-image {
+        height: 250px;
+        max-width: 210px;
+    }
+    
+    .portrait-image {
+        height: 270px;
+        max-width: 190px;
+    }
+    
+    .square-image {
+        height: 230px;
+        width: 230px;
+    }
+    
+    .almost-square-image {
+        height: 230px;
     }
 
     .video-container {
-        margin-top: 1.5rem;
-        margin-bottom: 1rem;
+        padding-bottom: 65%;
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
     }
 
     /* Quarantennale Image - iPhone 15/16/17 Pro Max */
@@ -569,13 +717,13 @@ main {
 }
 
 /* iPad and Tablets (768px) */
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 431px) {
     .main-header {
-        height: 316px; /* era 240px */
+        height: 264px;
     }
     
     .main-title {
-        font-size: 2.6rem; /* era 1.8rem */
+        font-size: 1.98rem;
     }
 
     main {
@@ -604,17 +752,42 @@ main {
         margin-top: 1.5rem;
     }
 
+    /* Tablet Image Sizes */
     .event-image {
-        height: 380px;
+        height: 240px;
     }
-
-    .event-image:nth-child(even) {
-        height: 260px;
+    
+    .spadino-image {
+        height: 200px;
+    }
+    
+    .horizontal-image {
+        height: 220px;
+    }
+    
+    .vertical-image {
+        height: 280px;
+        max-width: 240px;
+    }
+    
+    .portrait-image {
+        height: 300px;
+        max-width: 200px;
+    }
+    
+    .square-image {
+        height: 240px;
+        width: 240px;
+    }
+    
+    .almost-square-image {
+        height: 240px;
     }
 
     .video-container {
-        margin-top: 2rem;
-        margin-bottom: 1.5rem;
+        padding-bottom: 62%;
+        margin-top: 2.5rem;
+        margin-bottom: 1.8rem;
     }
 
     /* Quarantennale Image - iPad */
