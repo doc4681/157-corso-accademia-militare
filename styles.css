@@ -306,8 +306,8 @@ main {
         width: 100%;
         height: 280px;
         object-fit: cover;
-        !--border-radius: 10px;
-        !--box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+        border-radius: 10px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
         transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
         cursor: pointer;
         border: 2px solid transparent;
@@ -315,8 +315,8 @@ main {
     
     .event-image:hover {
         transform: scale(1.05) translateY(-3px);
-        !--box-shadow: 0 15px 40px rgba(11, 83, 148, 0.25);
-        !--border-color: #2c5f7f;
+        box-shadow: 0 15px 40px rgba(11, 83, 148, 0.25);
+        border-color: #2c5f7f;
     }
     
     /* Specific image types for desktop */
@@ -477,8 +477,8 @@ main {
         width: 100%;
         height: 280px;
         object-fit: cover;
-        !--border-radius: 10px;
-        !--box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+        border-radius: 10px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
         transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
         cursor: pointer;
         border: 2px solid transparent;
@@ -486,8 +486,8 @@ main {
     
     .event-image:hover {
         transform: scale(1.08) translateY(-5px);
-        !--box-shadow: 0 15px 40px rgba(11, 83, 148, 0.25);
-        !--border-color: #2c5f7f;
+        box-shadow: 0 15px 40px rgba(11, 83, 148, 0.25);
+        border-color: #2c5f7f;
     }
     
     .event-image:nth-child(even) {
@@ -1041,4 +1041,58 @@ main {
     .video-container {
         display: none;
     }
+}/* CSS per animazioni basate su scroll */
+
+.event-image img {
+    /* Stato iniziale */
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+    transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
+
+/* Stato finale quando l'elemento entra nel viewport */
+.event-image img.animate-in {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+/* Alternativa: animazione da sinistra */
+.event-image img.slide-left {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: all 0.6s ease-out;
+}
+
+.event-image img.slide-left.animate-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Alternativa: animazione da destra */
+.event-image img.slide-right {
+    opacity: 0;
+    transform: translateX(30px);
+    transition: all 0.6s ease-out;
+}
+
+.event-image img.slide-right.animate-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Alternativa: zoom in */
+.event-image img.zoom-in {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.event-image img.zoom-in.animate-in {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Delay progressivi per più immagini */
+.event-image img:nth-child(1).animate-in { transition-delay: 0.1s; }
+.event-image img:nth-child(2).animate-in { transition-delay: 0.2s; }
+.event-image img:nth-child(3).animate-in { transition-delay: 0.3s; }
