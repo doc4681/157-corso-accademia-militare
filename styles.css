@@ -315,8 +315,8 @@ main {
     
     .event-image:hover {
         transform: scale(1.05) translateY(-3px);
-        box-shadow: 0 15px 40px rgba(11, 83, 148, 0.25);
-        border-color: #2c5f7f;
+        !--box-shadow: 0 15px 40px rgba(11, 83, 148, 0.25);
+        !--border-color: #2c5f7f;
     }
     
     /* Specific image types for desktop */
