@@ -21,7 +21,7 @@ body {
 
 /* Header */
 .main-header {
-    background: white;
+    background: rgba(255, 255, 255, 0.85);
     background-image: url('images/Stemma_full.jpg');
     background-size: contain;
     background-position: center;
