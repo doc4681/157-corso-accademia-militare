@@ -258,7 +258,7 @@ main {
     
     /* Event date styling */
     .event-date {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         color: #666;
         font-weight: 500;
         padding: 0.5rem 1rem;
@@ -273,7 +273,7 @@ main {
     .event-box-text {
         grid-column: 1;
         grid-row: 2;
-        font-size: 1.1rem;
+        font-size: 0.9rem;
         color: #555;
         line-height: 1.6;
         padding: 1rem;
@@ -456,7 +456,7 @@ main {
     }
     
     .event-box-text {
-        font-size: 1.1rem;
+        font-size: 0.9rem;
         color: #555;
         line-height: 1.6;
         padding: 1rem;
@@ -664,11 +664,11 @@ main {
         }
 
         .event-title {
-            font-size: 1.3rem;
+            font-size: 1.5rem;
         }
 
         .event-date {
-            font-size: 0.9rem;
+            font-size: 1rem;
         }
 
         /* Mobile Image Sizes - Slightly larger */
