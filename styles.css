@@ -275,7 +275,7 @@ main {
 /* DESKTOP - Specific Image Types */
 /* Spadino - Orizzontale molto lungo */
 .spadino-image {
-    height: 180px;
+    height: auto;
     width: auto;
     max-width: 100%;
     object-fit: contain;
