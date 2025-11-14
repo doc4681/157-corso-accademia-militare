@@ -21,8 +21,8 @@ body {
 
 /* Header */
 .main-header {
-    background-image: url('images/Stemma_full.jpg');
-    !--background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.4)), url('images/Stemma_full.jpg');
+    background-image: url('images/Stemma 157° Corso_full.png');
+    !--background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.4)), url('images/Stemma 157° Corso_full.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
