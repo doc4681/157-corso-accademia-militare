@@ -477,8 +477,8 @@ main {
         width: 100%;
         height: 280px;
         object-fit: cover;
-        border-radius: 10px;
-        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+        !--border-radius: 10px;
+        !--box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
         transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
         cursor: pointer;
         border: 2px solid transparent;
@@ -486,8 +486,8 @@ main {
     
     .event-image:hover {
         transform: scale(1.08) translateY(-5px);
-        box-shadow: 0 15px 40px rgba(11, 83, 148, 0.25);
-        border-color: #2c5f7f;
+        !--box-shadow: 0 15px 40px rgba(11, 83, 148, 0.25);
+        !--border-color: #2c5f7f;
     }
     
     .event-image:nth-child(even) {
