@@ -872,7 +872,7 @@ main {
     
     /* Event link (title + date) ridotto in larghezza */
     .event-link {
-        width: 60%; /* Riduce larghezza al 60% */
+        width: 45%; /* Riduce larghezza al 60% */
         margin-bottom: 1.5rem;
         flex: 0 0 auto;
     }
