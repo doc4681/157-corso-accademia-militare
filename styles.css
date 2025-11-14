@@ -1,538 +1,186 @@
-/* 157° Corso Accademia Militare - Styles Compatible Version */
-/* Versione compatibile senza :has() per browser più vecchi */
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>157° Corso Accademia Militare</title>
+    <link rel="stylesheet" href="desktop_layout_styles.css?v=2025.11.14.2006">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1 class="main-title">157° Corso Accademia Militare</h1>
+        </div>
+    </header>
 
-/* Reset e Base Styles */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+    <main class="container">
+        <!-- Biennio in Accademia -->
+        <section class="event-section">
+            <a href="https://drive.google.com/drive/u/0/folders/1yePmG86Qd1O0SEV6gPvtpwHM5gec8RJY" target="_blank" class="event-link">
+                <h2 class="event-title">Biennio in Accademia</h2>
+                <p class="event-date">1975/1977</p>
+            </a>
+            <div class="event-box-text">
+                <p>Il biennio in Accademia rappresenta un'esperienza formativa unica nella vita di ogni cadetto. Due anni intensi di studio, crescita personale e cameratismo che hanno forgiato il carattere e l'identità del 157° Corso.</p>
+            </div>
+            <div class="image-gallery">
+                <img src="images/spadino.JPG" alt="Biennio 1975-1977" class="event-image spadino-image">
+                <!--img src="images/Giuramento 157° Corso (16).jpg" alt="Biennio 1975-1977" class="event-image almost-square-image" -->
+            </div>
+        </section>
 
-body {
-    font-family: 'Georgia', serif;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-    min-height: 100vh;
-    color: #333;
-}
+        <!-- Divider -->
+        <div class="section-divider">
+            <div class="tyJCtd baZpAe">
+                <div class="iwQgFb" role="presentation"></div>
+            </div>
+        </div>
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
+        <!-- Video YouTube -->
+        <section class="event-section">
+            <div class="video-container">
+                <iframe width="100%" height="400" 
+                        src="https://www.youtube.com/embed/SYgw_ANo2qo" 
+                        title="Due anni insieme - Ventennale 157° Corso" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                </iframe>
+            </div>
+        </section>
 
-/* Header */
-.main-header {
-    background: linear-gradient(135deg, #1a3a52, #2c5f7f);
-    color: white;
-    padding: 2rem 0;
-    text-align: center;
-    box-shadow: 0 4px 12px rgba(26, 58, 82, 0.3);
-}
+        <!-- Divider -->
+        <div class="section-divider">
+            <div class="tyJCtd baZpAe">
+                <div class="iwQgFb" role="presentation"></div>
+            </div>
+        </div>
+        
+        <!-- Ventennale -->
+        <section class="event-section">
+            <a href="https://drive.google.com/drive/folders/1ViUOosbk042JSujFcBKWlArVVbR95HAk?usp=sharing" target="_blank" class="event-link">
+                <h2 class="event-title">Ventennale</h2>
+                <p class="event-date">13 Aprile 1996</p>     
+            </a>
+            <div class="event-box-text">
+                <p>Il ventesimo anniversario del nostro ingreso in Accademia è stato celebrato con grande partecipazione e commozione. Un momento per ritrovarsi, ricordare e rinnovare i legami nati tra quelle mura.</p>
+            </div>
+            <div class="image-gallery">
+               <img src="images/20^ 157° Corso (30).jpg" alt="Ventennale 13 Aprile 1996" class="event-image horizontal-image">
+            </div>
+        </section>
 
-.main-title {
-    font-size: 2.8rem;
-    font-weight: 700;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    margin: 0;
-}
+        <!-- Divider -->
+        <div class="section-divider">
+            <div class="tyJCtd baZpAe">
+                <div class="iwQgFb" role="presentation"></div>
+            </div>
+        </div>
 
-/* Footer */
-.main-footer {
-    background: #1a3a52;
-    color: white;
-    text-align: center;
-    padding: 2rem 0;
-    margin-top: 4rem;
-}
+        <!-- Quarantennale -->
+        <section class="event-section">
+            <a href="https://drive.google.com/drive/folders/1gPaPGRpCm--iU7j3n8mX7itpJvRKeAjG?usp=sharing" target="_blank" class="event-link">
+                <h2 class="event-title">Quarantennale</h2>
+                <p class="event-date">12/13 Novembre 2015</p>
+            </a>
+            <div class="event-box-text">
+                <p>Il quarantennale ha rappresentato un traguardo importante, segnando quattro decenni di amicizia e ricordi condivisi. Un evento memorabile che ha visto la partecipazione di numerosi ex camerati.</p>
+            </div>
+            <div class="image-gallery">
+                <img src="images/Quarantennale_Locandina.jpg" alt="Quarantennale 2015" class="event-image vertical-image">
+            </div>
+        </section>
 
-/* Main Content */
-main {
-    padding: 3rem 0;
-}
+        <!-- Divider -->
+        <div class="section-divider">
+            <div class="tyJCtd baZpAe">
+                <div class="iwQgFb" role="presentation"></div>
+            </div>
+        </div>
 
-/* Event Section Base */
-.event-section {
-    background: white;
-    border-radius: 12px;
-    padding: 2.5rem;
-    margin-bottom: 3rem;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    border: 1px solid rgba(11, 83, 148, 0.1);
-}
+        <!-- Preraduno Torino -->
+        <section class="event-section">
+            <a href="https://drive.google.com/drive/folders/1LqdW6ZGnH-2UgPO3E9382TZ9wqLwt9L0?usp=sharing" target="_blank" class="event-link">
+                <h2 class="event-title">Preraduno Torino</h2>
+                <p class="event-date">10/12 Ottobre 2024</p>
+            </a>
+            <div class="event-box-text">
+                <p>Un evento di preparazione al grande raduno del Cinquantennale. Tre giorni di attività, ricordi e pianificazione per rendere indimenticabile la celebrazione del mezzo secolo dal nostro ingreso.</p>
+            </div>
+            <div class="image-gallery">
+                <!--img src="images/Piatto.jpg" alt="Preraduno Torino 2024" class="event-image square-image"-->
+                <img src="images/Preraduno.jpg" alt="Preraduno Torino 2024" class="event-image horizontal-image">
+            </div>
+        </section>
 
-.event-section:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
-}
+        <!-- Divider -->
+        <div class="section-divider">
+            <div class="tyJCtd baZpAe">
+                <div class="iwQgFb" role="presentation"></div>
+            </div>
+        </div>
 
-/* Video sections - Always stacked */
-.event-section.video-section {
-    display: block !important;
-}
+        <!-- Cinquantennale -->
+        <section class="event-section">
+            <a href="https://drive.google.com/drive/folders/1U4sVIvPBHY6gBj1wQkqHJRtoFAeP2KiD?usp=sharing" target="_blank" class="event-link">
+                <h2 class="event-title">Cinquantennale</h2>
+                <p class="event-date">13/14 Novembre 2025</p>
+            </a>
+            <div class="event-box-text">
+                <p>Il grande evento che segna mezzo secolo dal nostro ingreso in Accademia. Due giorni di celebrazioni, ricordi e festeggiamenti per onorare un percorso di vita iniziato nel lontano 1975.</p>
+            </div>
+            <div class="image-gallery">
+                <img src="images/Cinquantennale_In Progress.jpg" alt="Cinquantennale Novembre 2025" class="event-image horizontal-image">
+            </div>
+        </section>
 
-.event-section.video-section .event-link,
-.event-section.video-section .event-date,
-.event-section.video-section .event-box-text,
-.event-section.video-section .image-gallery {
-    display: block;
-    width: 100%;
-}
+        <!-- Divider -->
+        <div class="section-divider">
+            <div class="tyJCtd baZpAe">
+                <div class="iwQgFb" role="presentation"></div>
+            </div>
+        </div>
 
-.event-section.video-section .event-title {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-}
+        <!-- Numero Unico -->
+        <section class="event-section">
+            <a href="https://drive.google.com/drive/folders/1-A_DjOTw0i_sJzPR00siAS4iKgL8Rdpw?usp=sharing" target="_blank" class="event-link">
+                <h2 class="event-title">Numero Unico</h2>
+                <p class="event-date">1988</p>
+            </a>
+            <div class="event-box-text">
+                <p>Una pubblicazione speciale che ha raccolto i momenti più significativi del nostro percorso formativo. Un documento prezioso che testimonia lo spirito e i valori del 157° Corso.</p>
+            </div>
+            <div class="image-gallery">
+                <img src="images/Numero Unico.jpg" alt="Numero Unico" class="event-image portrait-image">
+            </div>
+        </section>
 
-.event-section.video-section .image-gallery {
-    margin-top: 2rem;
-}
+        <!-- Divider -->
+        <div class="section-divider">
+            <div class="tyJCtd baZpAe">
+                <div class="iwQgFb" role="presentation"></div>
+            </div>
+        </div>
 
-/* Desktop Two Column Layout - Solo per sezioni non video */
-@media (min-width: 769px) {
-    
-    /* Default desktop - sezioni normali in grid */
-    .event-section:not(.video-section) {
-        display: grid;
-        grid-template-columns: 40% 58%;
-        gap: 2rem;
-        align-items: start;
-        min-height: 400px;
-    }
-    
-    /* Left Column - Text Content */
-    .event-section:not(.video-section) .event-link {
-        grid-column: 1;
-        grid-row: 1;
-        text-decoration: none;
-        color: inherit;
-        display: block;
-        margin-bottom: 1.5rem;
-    }
-    
-    /* Event title styling */
-    .event-section:not(.video-section) .event-title {
-        font-size: 2.2rem;
-        font-weight: 700;
-        color: #1a3a52;
-        margin-bottom: 0.8rem;
-        transition: all 0.3s ease;
-        position: relative;
-        display: block;
-        width: 100%;
-        text-align: left;
-    }
-    
-    .event-section:not(.video-section) .event-title::after {
-        content: '';
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 0;
-        height: 3px;
-        background: linear-gradient(90deg, #0b5394, #2c5f7f);
-        transition: width 0.4s ease;
-    }
-    
-    .event-section:not(.video-section) .event-link:hover .event-title::after {
-        width: 100%;
-    }
-    
-    .event-section:not(.video-section) .event-title:hover {
-        color: #0b5394;
-        transform: translateX(5px);
-    }
-    
-    /* Event date positioning */
-    .event-section:not(.video-section) .event-date {
-        grid-column: 1;
-        grid-row: 2;
-        font-size: 1.3rem;
-        font-weight: 600;
-        color: #2c5f7f;
-        background: rgba(11, 83, 148, 0.1);
-        padding: 0.8rem 1.5rem;
-        border-radius: 25px;
-        display: inline-block;
-        margin-bottom: 2rem;
-        transition: all 0.3s ease;
-    }
-    
-    /* Event box text */
-    .event-section:not(.video-section) .event-box-text {
-        grid-column: 1;
-        grid-row: 3;
-        font-size: 1.1rem;
-        color: #555;
-        line-height: 1.6;
-        padding: 1.5rem;
-        background: rgba(11, 83, 148, 0.03);
-        border-radius: 8px;
-        border: 1px solid rgba(11, 83, 148, 0.1);
-        margin-top: 0.5rem;
-    }
-    
-    /* Right Column - Image Gallery */
-    .event-section:not(.video-section) .image-gallery {
-        grid-column: 2;
-        grid-row: 1 / span 3;
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        align-items: flex-start;
-        justify-content: flex-start;
-    }
-    
-    /* Desktop Image Dimensions */
-    .event-section:not(.video-section) .spadino-image {
-        height: 200px;
-        width: auto;
-        max-width: 100%;
-        object-fit: contain;
-        border-radius: 8px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    }
-    
-    .event-section:not(.video-section) .horizontal-image {
-        height: 300px;
-        width: auto;
-        max-width: 100%;
-        object-fit: contain;
-        border-radius: 8px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    }
-    
-    .event-section:not(.video-section) .vertical-image {
-        height: 350px;
-        width: auto;
-        max-width: 100%;
-        object-fit: contain;
-        border-radius: 8px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    }
-    
-    .event-section:not(.video-section) .portrait-image {
-        height: 400px;
-        width: auto;
-        max-width: 100%;
-        object-fit: contain;
-        border-radius: 8px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    }
-    
-    .event-section:not(.video-section) .square-image {
-        height: 300px;
-        width: 300px;
-        object-fit: cover;
-        border-radius: 8px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    }
-    
-    .event-section:not(.video-section) .almost-square-image {
-        height: 280px;
-        width: auto;
-        max-width: 100%;
-        object-fit: contain;
-        border-radius: 8px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    }
-    
-    .event-section:not(.video-section) img {
-        transition: transform 0.3s ease;
-        display: block;
-    }
-    
-    .event-section:not(.video-section) img:hover {
-        transform: scale(1.02);
-    }
-}
+        <!-- Piatto Commemorativo -->
+        <section class="event-section">
+            <a href="https://drive.google.com/drive/folders/1-A_DjOTw0i_sJzPR00siAS4iKgL8Rdpw?usp=sharing" target="_blank" class="event-link">
+                <h2 class="event-title">Piatto Commemorativo</h2>
+                <p class="event-date">Torino, 11 Ottobre 2024</p>
+            </a>
+            <div class="event-box-text">
+                <p>Un elegante piatto commemorativo realizzato per celebrare il nostro mezzo secolo. Un'opera d'arte che rappresenta l'orgoglio e la tradizione del 157° Corso Accademia Militare.</p>
+            </div>
+            <div class="image-gallery">
+                <img src="images/Piatto.jpg" alt="Piatto Commemorativo" class="event-image square-image">
+            </div>
+        </section>
+    </main>
 
-/* Video Container */
-.video-container {
-    background: white;
-    border-radius: 12px;
-    padding: 2rem;
-    margin-bottom: 3rem;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.video-container video {
-    width: 100%;
-    max-width: 800px;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
-
-/* Mobile Responsive - iPhone SE */
-@media (max-width: 320px) {
-    .container {
-        padding: 0 10px;
-    }
-    
-    .main-title {
-        font-size: 1.8rem;
-    }
-    
-    .event-section {
-        padding: 1.5rem;
-        margin-bottom: 2rem;
-    }
-    
-    .event-title {
-        font-size: 1.4rem;
-    }
-    
-    .event-date {
-        font-size: 1rem;
-        padding: 0.5rem 1rem;
-    }
-    
-    .event-box-text {
-        font-size: 0.9rem;
-        padding: 0.8rem;
-    }
-    
-    .spadino-image {
-        height: 120px;
-    }
-    
-    .horizontal-image {
-        height: 140px;
-    }
-    
-    .vertical-image {
-        height: 180px;
-    }
-    
-    .portrait-image {
-        height: 200px;
-    }
-    
-    .square-image {
-        height: 160px;
-        width: 160px;
-    }
-    
-    .almost-square-image {
-        height: 150px;
-    }
-}
-
-/* iPhone 8/7/6s */
-@media (min-width: 321px) and (max-width: 375px) {
-    .container {
-        padding: 0 15px;
-    }
-    
-    .main-title {
-        font-size: 2rem;
-    }
-    
-    .event-section {
-        padding: 1.8rem;
-    }
-    
-    .event-title {
-        font-size: 1.5rem;
-    }
-    
-    .event-date {
-        font-size: 1.1rem;
-        padding: 0.6rem 1.2rem;
-    }
-    
-    .event-box-text {
-        font-size: 1rem;
-        padding: 1rem;
-    }
-    
-    .spadino-image {
-        height: 140px;
-    }
-    
-    .horizontal-image {
-        height: 160px;
-    }
-    
-    .vertical-image {
-        height: 200px;
-    }
-    
-    .portrait-image {
-        height: 220px;
-    }
-    
-    .square-image {
-        height: 180px;
-        width: 180px;
-    }
-    
-    .almost-square-image {
-        height: 170px;
-    }
-}
-
-/* iPhone 11/12/13/14 */
-@media (min-width: 376px) and (max-width: 390px) {
-    .container {
-        padding: 0 18px;
-    }
-    
-    .main-title {
-        font-size: 2.2rem;
-    }
-    
-    .event-section {
-        padding: 2rem;
-    }
-    
-    .event-title {
-        font-size: 1.6rem;
-    }
-    
-    .event-date {
-        font-size: 1.2rem;
-        padding: 0.7rem 1.3rem;
-    }
-    
-    .event-box-text {
-        font-size: 1.05rem;
-        padding: 1.1rem;
-    }
-    
-    .spadino-image {
-        height: 160px;
-    }
-    
-    .horizontal-image {
-        height: 180px;
-    }
-    
-    .vertical-image {
-        height: 220px;
-    }
-    
-    .portrait-image {
-        height: 240px;
-    }
-    
-    .square-image {
-        height: 200px;
-        width: 200px;
-    }
-    
-    .almost-square-image {
-        height: 190px;
-    }
-}
-
-/* iPhone 15/16/17 Pro Max */
-@media (min-width: 391px) and (max-width: 430px) {
-    .container {
-        padding: 0 20px;
-    }
-    
-    .main-title {
-        font-size: 2.4rem;
-    }
-    
-    .event-section {
-        padding: 2.2rem;
-    }
-    
-    .event-title {
-        font-size: 1.7rem;
-    }
-    
-    .event-date {
-        font-size: 1.25rem;
-        padding: 0.8rem 1.4rem;
-    }
-    
-    .event-box-text {
-        font-size: 1.1rem;
-        padding: 1.2rem;
-    }
-    
-    .spadino-image {
-        height: 180px;
-    }
-    
-    .horizontal-image {
-        height: 200px;
-    }
-    
-    .vertical-image {
-        height: 240px;
-    }
-    
-    .portrait-image {
-        height: 260px;
-    }
-    
-    .square-image {
-        height: 220px;
-        width: 220px;
-    }
-    
-    .almost-square-image {
-        height: 210px;
-    }
-}
-
-/* iPad */
-@media (min-width: 431px) and (max-width: 768px) {
-    .container {
-        padding: 0 30px;
-    }
-    
-    .main-title {
-        font-size: 2.6rem;
-    }
-    
-    .event-section {
-        padding: 2.5rem;
-    }
-    
-    .event-title {
-        font-size: 1.8rem;
-    }
-    
-    .event-date {
-        font-size: 1.3rem;
-        padding: 0.9rem 1.5rem;
-    }
-    
-    .event-box-text {
-        font-size: 1.15rem;
-        padding: 1.3rem;
-    }
-    
-    .spadino-image {
-        height: 190px;
-    }
-    
-    .horizontal-image {
-        height: 210px;
-    }
-    
-    .vertical-image {
-        height: 250px;
-    }
-    
-    .portrait-image {
-        height: 270px;
-    }
-    
-    .square-image {
-        height: 230px;
-        width: 230px;
-    }
-    
-    .almost-square-image {
-        height: 220px;
-    }
-}
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 157° Corso Accademia Militare. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+</body>
+</html>
