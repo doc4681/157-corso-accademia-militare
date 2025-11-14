@@ -275,7 +275,7 @@ main {
 /* DESKTOP - Specific Image Types */
 /* Spadino - Orizzontale molto lungo */
 .spadino-image {
-    height: auto;
+    height: 180px;
     width: auto;
     max-width: 100%;
     object-fit: contain;
@@ -857,5 +857,88 @@ main {
 
     .video-container {
         display: none;
+    }
+}
+
+/* ===== DESKTOP ONLY: Immagini allineate in alto al date ===== */
+/* Solo per schermi maggiori di 768px (tablet) */
+@media (min-width: 769px) {
+    
+    /* Event section diventa flex container */
+    .event-section {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /* Event link (title + date) ridotto in larghezza */
+    .event-link {
+        width: 60%; /* Riduce larghezza al 60% */
+        margin-bottom: 1.5rem;
+        flex: 0 0 auto;
+    }
+    
+    /* Image gallery come flex item allineato in alto */
+    .image-gallery {
+        flex: 0 0 auto;
+        margin-top: 0;
+        margin-left: auto;
+        align-self: flex-start;
+        width: 35%; /* Larghezza ridotta per le immagini */
+    }
+    
+    /* Grid layout per le immagini (single column) */
+    .image-gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    /* Dimensioni ridotte delle immagini per il nuovo layout */
+    .event-image {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    /* Dimensioni specifiche per ogni tipo di immagine */
+    .spadino-image {
+        height: 120px;
+        width: auto;
+        max-width: 200px;
+    }
+    
+    .horizontal-image {
+        height: 150px;
+        width: auto;
+        max-width: 250px;
+    }
+    
+    .vertical-image {
+        height: 180px;
+        width: auto;
+        max-width: 160px;
+    }
+    
+    .portrait-image {
+        height: 200px;
+        width: auto;
+        max-width: 140px;
+    }
+    
+    .square-image {
+        height: 140px;
+        width: 140px;
+        max-width: 140px;
+    }
+    
+    .almost-square-image {
+        height: 130px;
+        width: auto;
+        max-width: 180px;
+    }
+    
+    /* Event date allineato in alto */
+    .event-date {
+        display: block;
+        margin-top: 0;
     }
 }
