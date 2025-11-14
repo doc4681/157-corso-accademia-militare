@@ -22,7 +22,7 @@ body {
 /* Header */
 .main-header {
     background-image: url('images/Stemma 157° Corso_full.png');
-    !--background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.4)), url('images/Stemma 157° Corso_full.png');
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.4)), url('images/Stemma 157° Corso_full.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -583,6 +583,7 @@ main {
     @media (max-width: 375px) {
         .main-header {
             height: 211px;
+            background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.4)), url('images/Stemma 157° Corso_full.png');
         }
         
         .main-title {
@@ -659,6 +660,7 @@ main {
     @media (max-width: 375px) and (min-width: 321px) {
         .main-header {
             height: 198px;
+            background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.4)), url('images/Stemma 157° Corso_full.png');
         }
         
         .main-title {
@@ -715,6 +717,7 @@ main {
     @media (max-width: 390px) and (min-width: 376px) {
         .main-header {
             height: 220px;
+            background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.4)), url('images/Stemma 157° Corso_full.png');
         }
         
         .main-title {
@@ -790,6 +793,7 @@ main {
     @media (max-width: 430px) and (min-width: 391px) {
         .main-header {
             height: 242px;
+            background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.4)), url('images/Stemma 157° Corso_full.png');
         }
         
         .main-title {
@@ -865,6 +869,7 @@ main {
     @media (max-width: 768px) and (min-width: 431px) {
         .main-header {
             height: 264px;
+            background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.4)), url('images/Stemma 157° Corso_full.png');
         }
         
         .main-title {
