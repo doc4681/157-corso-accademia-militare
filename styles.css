@@ -21,8 +21,8 @@ body {
 
 /* Header */
 .main-header {
-    background: rgba(254, 254, 254, 0.5);
     background-image: url('images/Stemma_full.jpg');
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8)), url('images/Stemma_full.jpg');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
